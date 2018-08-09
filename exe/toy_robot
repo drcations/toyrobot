@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'toy_robot'
+
+# Consume the plaintext of the robot program until EOF.
+text = STDIN.read.chomp
+
+# Initialize and perform the program.
+ToyRobot::Program.new(text).perform
