@@ -62,32 +62,37 @@ module ToyRobot
           end
         end
   
-        def turn(direction)
-
-            if !@coords
-              self
-            else
-              old_index = DIRECTIONS.index(@direction)
+      def turn(direction)
+        if !@coords
+          self
+        else
+          old_index = DIRECTIONS.index(@direction)
   
-              raise "Wrong direction #{@direction}" unless old_index
+          raise "Wrong direction #{@direction}" unless old_index
   
-              shift =
-                case direction
-                when :left then -1
-                when :right then 1
-                end
-  
-                new_index = (old_direction_index + shift) % 4
-                new_direction = DIRECTIONS[new_index]
-        
-                self.class.new(@coords, new_direction)
-              end
+          shift =
+            case direction
+            when :left then -1
+            when :right then 1
             end
   
-            def report
+          new_index = (old_direction_index + shift) % 4
+          new_direction = DIRECTIONS[new_index]
+        
+          self.class.new(@coords, new_direction)
+        end
+     end
+  
+     def report
 
-                if !@coords
-                  puts 'empty'
-                else
-                  puts((@coords + [@direction]).join(','))
-                end
+        if !@coords
+          puts 'empty'
+        else
+          puts((@coords + [@direction]).join(','))
+        end
+  
+        self
+      end
+    end
+ end
+          
