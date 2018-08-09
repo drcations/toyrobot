@@ -76,3 +76,10 @@ module ToyRobot
                 when :left then -1
                 when :right then 1
                 end
+  
+                new_index = (old_direction_index + shift) % 4
+                new_direction = DIRECTIONS[new_index]
+        
+                self.class.new(@coords, new_direction)
+              end
+            end
