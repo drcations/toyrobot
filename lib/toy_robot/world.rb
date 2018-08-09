@@ -63,3 +63,8 @@ module ToyRobot
         end
   
         def turn(direction)
+
+            if !@coords
+              self
+            else
+              old_index = DIRECTIONS.index(@direction)
