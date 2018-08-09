@@ -61,3 +61,5 @@ module ToyRobot
             end
           end
         end
+  
+        def turn(direction)
