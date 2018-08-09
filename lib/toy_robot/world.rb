@@ -83,3 +83,5 @@ module ToyRobot
                 self.class.new(@coords, new_direction)
               end
             end
+  
+            def report
