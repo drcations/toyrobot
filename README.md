@@ -11,8 +11,10 @@ then:
 
 enter your commands - eg. `PLACE 1,2,WEST MOVE REPORT` - multiple commands can be passed to the program eg:
 
-```PLACE 0,0,NORTH MOVE REPORT
-MOVE LEFT REPORT```
+```
+PLACE 0,0,NORTH MOVE REPORT
+MOVE LEFT REPORT
+```
 
 then:
 
