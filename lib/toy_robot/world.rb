@@ -5,3 +5,8 @@ module ToyRobot
       attr_reader :coords, :direction
   
       class << self
+        
+        
+        def empty
+          new(nil, nil)
+        end
