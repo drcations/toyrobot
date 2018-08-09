@@ -1,0 +1,110 @@
+dave.cations@ratbird[10:13:04]~/personal_git/toyrobot:rspec
+
+ToyRobot::Program
+  #initialize
+    converts plaintext into a sequence commands
+  #perform
+    with a test program 1
+      returns a correct world
+    with a test program 2
+      returns a correct world (FAILED - 1)
+    with a test program 3
+      returns a correct world (FAILED - 2)
+    with a difficult program
+      returns a correct world (FAILED - 3)
+    when trying to escape east by north
+      stays in the world (FAILED - 4)
+    when trying to escape west by south
+      stays in the world (FAILED - 5)
+    without any placement
+      returns an empty world
+    with incorrect placement
+      returns an empty world
+
+Failures:
+
+  1) ToyRobot::Program#perform with a test program 2 returns a correct world
+     Failure/Error: new_index = (old_direction_index + shift) % 4
+     
+     NameError:
+       undefined local variable or method `old_direction_index' for #<ToyRobot::World:0x000055fa58643838>
+     # ./lib/toy_robot/world.rb:79:in `turn'
+     # ./lib/toy_robot/world.rb:27:in `apply'
+     # ./lib/toy_robot/program.rb:38:in `block in perform'
+     # ./lib/toy_robot/program.rb:37:in `each'
+     # ./lib/toy_robot/program.rb:37:in `reduce'
+     # ./lib/toy_robot/program.rb:37:in `perform'
+     # ./spec/toy_robot_spec.rb:22:in `block (3 levels) in <top (required)>'
+     # ./spec/toy_robot_spec.rb:38:in `block (5 levels) in <top (required)>'
+     # ./spec/toy_robot_spec.rb:38:in `block (4 levels) in <top (required)>'
+
+  2) ToyRobot::Program#perform with a test program 3 returns a correct world
+     Failure/Error: new_index = (old_direction_index + shift) % 4
+     
+     NameError:
+       undefined local variable or method `old_direction_index' for #<ToyRobot::World:0x000055fa586410b0>
+     # ./lib/toy_robot/world.rb:79:in `turn'
+     # ./lib/toy_robot/world.rb:27:in `apply'
+     # ./lib/toy_robot/program.rb:38:in `block in perform'
+     # ./lib/toy_robot/program.rb:37:in `each'
+     # ./lib/toy_robot/program.rb:37:in `reduce'
+     # ./lib/toy_robot/program.rb:37:in `perform'
+     # ./spec/toy_robot_spec.rb:22:in `block (3 levels) in <top (required)>'
+     # ./spec/toy_robot_spec.rb:48:in `block (5 levels) in <top (required)>'
+     # ./spec/toy_robot_spec.rb:48:in `block (4 levels) in <top (required)>'
+
+  3) ToyRobot::Program#perform with a difficult program returns a correct world
+     Failure/Error: new_index = (old_direction_index + shift) % 4
+     
+     NameError:
+       undefined local variable or method `old_direction_index' for #<ToyRobot::World:0x000055fa5863e310>
+     # ./lib/toy_robot/world.rb:79:in `turn'
+     # ./lib/toy_robot/world.rb:27:in `apply'
+     # ./lib/toy_robot/program.rb:38:in `block in perform'
+     # ./lib/toy_robot/program.rb:37:in `each'
+     # ./lib/toy_robot/program.rb:37:in `reduce'
+     # ./lib/toy_robot/program.rb:37:in `perform'
+     # ./spec/toy_robot_spec.rb:22:in `block (3 levels) in <top (required)>'
+     # ./spec/toy_robot_spec.rb:62:in `block (5 levels) in <top (required)>'
+     # ./spec/toy_robot_spec.rb:62:in `block (4 levels) in <top (required)>'
+
+  4) ToyRobot::Program#perform when trying to escape east by north stays in the world
+     Failure/Error: new_index = (old_direction_index + shift) % 4
+     
+     NameError:
+       undefined local variable or method `old_direction_index' for #<ToyRobot::World:0x000055fa58637538>
+     # ./lib/toy_robot/world.rb:79:in `turn'
+     # ./lib/toy_robot/world.rb:27:in `apply'
+     # ./lib/toy_robot/program.rb:38:in `block in perform'
+     # ./lib/toy_robot/program.rb:37:in `each'
+     # ./lib/toy_robot/program.rb:37:in `reduce'
+     # ./lib/toy_robot/program.rb:37:in `perform'
+     # ./spec/toy_robot_spec.rb:22:in `block (3 levels) in <top (required)>'
+     # ./spec/toy_robot_spec.rb:76:in `block (5 levels) in <top (required)>'
+     # ./spec/toy_robot_spec.rb:76:in `block (4 levels) in <top (required)>'
+
+  5) ToyRobot::Program#perform when trying to escape west by south stays in the world
+     Failure/Error: new_index = (old_direction_index + shift) % 4
+     
+     NameError:
+       undefined local variable or method `old_direction_index' for #<ToyRobot::World:0x000055fa58634a90>
+     # ./lib/toy_robot/world.rb:79:in `turn'
+     # ./lib/toy_robot/world.rb:27:in `apply'
+     # ./lib/toy_robot/program.rb:38:in `block in perform'
+     # ./lib/toy_robot/program.rb:37:in `each'
+     # ./lib/toy_robot/program.rb:37:in `reduce'
+     # ./lib/toy_robot/program.rb:37:in `perform'
+     # ./spec/toy_robot_spec.rb:22:in `block (3 levels) in <top (required)>'
+     # ./spec/toy_robot_spec.rb:90:in `block (5 levels) in <top (required)>'
+     # ./spec/toy_robot_spec.rb:90:in `block (4 levels) in <top (required)>'
+
+Finished in 0.00563 seconds (files took 0.15258 seconds to load)
+9 examples, 5 failures
+
+Failed examples:
+
+rspec ./spec/toy_robot_spec.rb:37 # ToyRobot::Program#perform with a test program 2 returns a correct world
+rspec ./spec/toy_robot_spec.rb:47 # ToyRobot::Program#perform with a test program 3 returns a correct world
+rspec ./spec/toy_robot_spec.rb:61 # ToyRobot::Program#perform with a difficult program returns a correct world
+rspec ./spec/toy_robot_spec.rb:75 # ToyRobot::Program#perform when trying to escape east by north stays in the world
+rspec ./spec/toy_robot_spec.rb:89 # ToyRobot::Program#perform when trying to escape west by south stays in the world
