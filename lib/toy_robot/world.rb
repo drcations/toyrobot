@@ -14,3 +14,8 @@ module ToyRobot
           (0..4).cover?(coords[0]) && (0..4).cover?(coords[1])
         end
       end
+  
+      def initialize(coords, direction)
+        @coords = coords
+        @direction = direction
+      end
