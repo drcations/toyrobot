@@ -70,3 +70,9 @@ module ToyRobot
               old_index = DIRECTIONS.index(@direction)
   
               raise "Wrong direction #{@direction}" unless old_index
+  
+              shift =
+                case direction
+                when :left then -1
+                when :right then 1
+                end
