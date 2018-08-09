@@ -1,10 +1,5 @@
 
 <strong>Toy Robot</strong>
-
-Details:
-
-
-
 Usage:
 
 bundle install
@@ -18,28 +13,7 @@ then
 
 EOF - eg. ctrl-d or ⌘-d
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ####################################################################
-
 
 <strong>Toy Robot Simulator challenge</strong>
 
