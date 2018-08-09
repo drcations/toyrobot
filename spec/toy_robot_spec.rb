@@ -64,3 +64,17 @@ RSpec.describe ToyRobot::Program do
           expect(subject.direction).to eq 'NORTH'
         end
       end
+
+      context 'when trying to escape east by north' do
+        let(:text) do
+          'PLACE 0,0,NORTH MOVE MOVE MOVE MOVE MOVE ' \
+          'RIGHT MOVE MOVE MOVE MOVE MOVE ' \
+          'REPORT'
+        end
+  
+        it 'stays in the world' do
+          expect { subject }.to output.to_stdout
+          expect(subject.coords).to eq [4, 4]
+          expect(subject.direction).to eq 'EAST'
+        end
+      end
