@@ -5,3 +5,8 @@ module ToyRobot
       attr_reader :commands
   
       def initialize(text)
+        
+        tokens = text.split(/\s+/m)
+  
+        @commands = []
+  
