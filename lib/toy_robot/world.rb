@@ -85,3 +85,9 @@ module ToyRobot
             end
   
             def report
+
+                if !@coords
+                  puts 'empty'
+                else
+                  puts((@coords + [@direction]).join(','))
+                end
