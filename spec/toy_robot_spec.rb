@@ -92,3 +92,26 @@ RSpec.describe ToyRobot::Program do
           expect(subject.direction).to eq 'WEST'
         end
       end
+
+      context 'without any placement' do
+        let(:text) { 'LEFT MOVE RIGHT MOVE REPORT' }
+  
+        it 'returns an empty world' do
+          expect { subject }.to output("empty\n").to_stdout
+          expect(subject.coords).to be nil
+          expect(subject.direction).to be nil
+        end
+      end
+  
+      context 'with incorrect placement' do
+        let(:text) { 'PLACE 0,5,NORTH MOVE RIGHT LEFT MOVE REPORT' }
+  
+        it 'returns an empty world' do
+          expect { subject }.to output("empty\n").to_stdout
+          expect(subject.coords).to be nil
+          expect(subject.direction).to be nil
+        end
+      end
+    end
+  end
+  
