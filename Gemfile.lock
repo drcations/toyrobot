@@ -1,0 +1,4 @@
+PATH
+  remote: .
+  specs:
+    toy_robot (0.1.0)
