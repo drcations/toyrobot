@@ -15,6 +15,10 @@ then:
 
 EOF - eg. `ctrl-d or ⌘-d` to see your output.
 
+for testing:
+
+`rspec`
+
 ####################################################################
 
 <strong>Toy Robot Simulator challenge</strong>

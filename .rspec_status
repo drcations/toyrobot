@@ -1,11 +1,11 @@
 example_id                        | status | run_time        |
 --------------------------------- | ------ | --------------- |
-./spec/toy_robot_spec.rb[1:1:1]   | passed | 0.00047 seconds |
-./spec/toy_robot_spec.rb[1:2:1:1] | passed | 0.00084 seconds |
-./spec/toy_robot_spec.rb[1:2:2:1] | failed | 0.00011 seconds |
-./spec/toy_robot_spec.rb[1:2:3:1] | failed | 0.00008 seconds |
-./spec/toy_robot_spec.rb[1:2:4:1] | failed | 0.00009 seconds |
-./spec/toy_robot_spec.rb[1:2:5:1] | failed | 0.00009 seconds |
-./spec/toy_robot_spec.rb[1:2:6:1] | failed | 0.00008 seconds |
-./spec/toy_robot_spec.rb[1:2:7:1] | passed | 0.00067 seconds |
+./spec/toy_robot_spec.rb[1:1:1]   | passed | 0.00029 seconds |
+./spec/toy_robot_spec.rb[1:2:1:1] | passed | 0.00064 seconds |
+./spec/toy_robot_spec.rb[1:2:2:1] | passed | 0.00012 seconds |
+./spec/toy_robot_spec.rb[1:2:3:1] | passed | 0.00008 seconds |
+./spec/toy_robot_spec.rb[1:2:4:1] | passed | 0.0001 seconds  |
+./spec/toy_robot_spec.rb[1:2:5:1] | passed | 0.00009 seconds |
+./spec/toy_robot_spec.rb[1:2:6:1] | passed | 0.00011 seconds |
+./spec/toy_robot_spec.rb[1:2:7:1] | passed | 0.00032 seconds |
 ./spec/toy_robot_spec.rb[1:2:8:1] | passed | 0.00009 seconds |
