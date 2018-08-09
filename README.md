@@ -1,5 +1,5 @@
 
-<strong>Toy Robot<strong>
+<strong>Toy Robot</strong>
 
 Details:
 
@@ -7,6 +7,16 @@ Details:
 
 Usage:
 
+bundle install
+bundle exec exe/toy_robot
+
+then:
+
+enter your commands - eg. PLACE 1,2,WEST MOVE REPORT
+
+then
+
+EOF - eg. ctrl-d or ⌘-d
 
 
 
