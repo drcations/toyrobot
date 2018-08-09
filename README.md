@@ -1,17 +1,18 @@
 
 <strong>Toy Robot</strong>
+
 Usage:
 
-bundle install
-bundle exec exe/toy_robot
+`bundle install`
+`bundle exec exe/toy_robot`
 
 then:
 
-enter your commands - eg. PLACE 1,2,WEST MOVE REPORT
+enter your commands - eg. `PLACE 1,2,WEST MOVE REPORT`
 
 then
 
-EOF - eg. ctrl-d or ⌘-d
+EOF - eg. `ctrl-d or ⌘-d` to see your output.
 
 ####################################################################
 
