@@ -33,4 +33,11 @@ module ToyRobot
       end     
      
       def perform
+        
+        @commands.reduce(ToyRobot::World.empty) do |current_world, command|
+          current_world.apply(*command)
+        end
+      end
+    end
+  end
      
