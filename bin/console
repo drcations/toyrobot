@@ -3,5 +3,5 @@
 require "bundler/setup"
 require "toy_robot"
 
-require irb
-IRB.start{_FILE_}
+require "irb"
+IRB.start(__FILE__)
