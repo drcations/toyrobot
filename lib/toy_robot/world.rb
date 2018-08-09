@@ -33,3 +33,10 @@ module ToyRobot
   
       def place(*args)
         coords, direction = args
+  
+        if self.class.valid_coords?(coords)
+          self.class.new(coords, direction)
+        else
+          self
+        end
+      end
