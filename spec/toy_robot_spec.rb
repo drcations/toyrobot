@@ -40,3 +40,13 @@ RSpec.describe ToyRobot::Program do
           expect(subject.direction).to eq 'WEST'
         end
       end
+
+      context 'with a test program 3' do
+        let(:text) { 'PLACE 1,2,EAST MOVE MOVE LEFT MOVE REPORT' }
+  
+        it 'returns a correct world' do
+          expect { subject }.to output("3,3,NORTH\n").to_stdout
+          expect(subject.coords).to eq [3, 3]
+          expect(subject.direction).to eq 'NORTH'
+        end
+      end
