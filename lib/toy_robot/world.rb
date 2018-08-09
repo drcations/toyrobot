@@ -28,3 +28,8 @@ module ToyRobot
         when :report then report
         end
       end
+  
+      private
+  
+      def place(*args)
+        coords, direction = args
