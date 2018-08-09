@@ -68,3 +68,5 @@ module ToyRobot
               self
             else
               old_index = DIRECTIONS.index(@direction)
+  
+              raise "Wrong direction #{@direction}" unless old_index
