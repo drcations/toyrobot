@@ -19,3 +19,12 @@ module ToyRobot
         @coords = coords
         @direction = direction
       end
+
+      def apply(command, *args)
+        case command
+        when :place then place(*args)
+        when :move then move
+        when :turn then turn(args[0])
+        when :report then report
+        end
+      end
