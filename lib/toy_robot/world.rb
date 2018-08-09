@@ -9,4 +9,10 @@ module ToyRobot
         tokens = text.split(/\s+/m)
   
         @commands = []
+
+        until tokens.empty?
+          token = tokens.shift
+  
+          case token
+          when 'PLACE'
   
