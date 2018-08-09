@@ -30,5 +30,7 @@ module ToyRobot
             @commands << :report
           end
         end
-      end
-  
+      end     
+     
+      def perform
+     
